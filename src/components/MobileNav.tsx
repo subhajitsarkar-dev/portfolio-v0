@@ -8,12 +8,10 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
-import profile from "../../public/dp.jpg";
 
 const MobileNav = () => {
   const [openSheet, setOpenSheet] = useState(false);
@@ -24,9 +22,9 @@ const MobileNav = () => {
     <>
       <Sheet open={openSheet} onOpenChange={setOpenSheet}>
         <SheetTrigger asChild className="cursor-pointer sm:hidden">
-          <RxHamburgerMenu size={30} />
+          <RxHamburgerMenu size={28} />
         </SheetTrigger>
-        <SheetContent side={"top"}>
+        <SheetContent side={"bottom"}>
           <SheetHeader>
             <SheetTitle></SheetTitle>
 
