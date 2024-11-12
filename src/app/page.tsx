@@ -1,7 +1,67 @@
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import { BsTwitter } from "react-icons/bs";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
+import { SiGmail } from "react-icons/si";
+import homeBackground from "../../public/background.png";
+
 const page = () => {
   return (
     <>
-      <div className="">Subhajit</div>
+      <section className="flex min-h-screen items-center justify-center">
+        <div className="relative mx-4 sm:mx-12">
+          <Image
+            alt="Background Graphic"
+            src={homeBackground}
+            width={406}
+            height={368}
+            className="absolute right-1/2 top-0 -z-50 h-auto w-[400px] -translate-y-1/3 translate-x-1/2 opacity-10 sm:w-[500px]"
+            priority
+          />
+          <h1 className="text-center text-3xl font-medium sm:text-5xl">
+            I&apos;m Subhajit Sarkar, a Full Stack Web Developer
+          </h1>
+          <div className="mt-4 flex justify-center">
+            <p className="text-justify sm:w-3/4">
+              I started my web development journey from Central Institute of
+              Technology in 2021 and it was complete in 2024. As well as I
+              complete my B.A from West Bengal State University. In this period
+              I learned about many languages and frameworks like HTML&#44;
+              CSS&#44; JavaScript&#44; React&#44; Nextjs and so one. In my free
+              time, I love to play video games and listen to music.
+            </p>
+          </div>
+
+          <div className="mt-10 flex items-center justify-center gap-5">
+            <a href="https://github.com/subhajitsarkar-dev" target="_blank">
+              <Button color="default" size="icon">
+                <FaGithub size={28} className="text-white dark:text-black" />
+              </Button>
+            </a>
+            <a href="https://x.com/sarkar50664" target="_blank">
+              <Button color="default" size="icon">
+                <BsTwitter size={28} className="text-white dark:text-black" />
+              </Button>
+            </a>
+            <a href="mailto:subhajitsarkar.dev@gmail.com" target="_blank">
+              <Button color="default" size="icon">
+                <SiGmail size={28} className="text-white dark:text-black" />
+              </Button>
+            </a>
+            <a
+              href="https://linkedin.com/in/subhajitsarkar-dev"
+              target="_blank"
+            >
+              <Button color="default" size="icon">
+                <FaLinkedinIn
+                  size={28}
+                  className="text-white dark:text-black"
+                />
+              </Button>
+            </a>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
