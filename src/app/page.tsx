@@ -22,7 +22,7 @@ const page = () => {
             I&apos;m Subhajit Sarkar, a Full Stack Web Developer
           </h1>
           <div className="mt-4 flex justify-center">
-            <p className="text-justify sm:w-3/4">
+            <p className="text-justify text-base sm:w-3/4 sm:text-center">
               I started my web development journey from Central Institute of
               Technology in 2021 and it was complete in 2024. As well as I
               complete my B.A from West Bengal State University. In this period
