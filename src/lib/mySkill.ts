@@ -58,7 +58,7 @@ export const skills = [
   {
     name: "Node.js",
     icon: FaNodeJs,
-    description: "JavaScript runtime enveronment.",
+    description: "JavaScript runtime environment.",
   },
   {
     name: "Directus",

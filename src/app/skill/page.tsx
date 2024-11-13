@@ -9,7 +9,7 @@ const page = () => {
           <h1 className="mb-4 text-4xl font-bold text-black dark:text-white">
             My Skills
           </h1>
-          <p className="text-lg text-gray-600 dark:text-gray-400">
+          <p className="text-lg text-black dark:text-white">
             Technologies and tools I have learn
           </p>
         </div>
@@ -21,11 +21,11 @@ const page = () => {
             >
               <div className="flex items-center gap-4">
                 <skill.icon className="text-4xl text-black dark:text-white" />
-                <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100">
+                <h3 className="text-xl font-semibold text-black dark:text-white">
                   {skill.name}
                 </h3>
               </div>
-              <p className="mt-2 text-gray-600 dark:text-gray-400">
+              <p className="mt-2 text-black dark:text-white">
                 {skill.description}
               </p>
             </Card>

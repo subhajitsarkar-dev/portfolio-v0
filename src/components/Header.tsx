@@ -11,7 +11,7 @@ const Header = () => {
   const router = usePathname();
   return (
     <>
-      <header className="fixed top-0 w-full border-b">
+      <header className="fixed top-0 w-full border-b backdrop-blur">
         <div className="container mx-auto flex max-w-screen-lg items-center justify-between px-6 py-4">
           <div className="">
             <Link href="/" className="flex items-center gap-2">
