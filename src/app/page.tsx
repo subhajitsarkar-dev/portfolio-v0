@@ -4,6 +4,7 @@ import { BsTwitter } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
 import { SiGmail } from "react-icons/si";
 import homeBackground from "../../public/background.png";
+import Link from "next/link";
 
 const page = () => {
   return (
@@ -33,22 +34,22 @@ const page = () => {
           </div>
 
           <div className="mt-10 flex items-center justify-center gap-5">
-            <a href="https://github.com/subhajitsarkar-dev" target="_blank">
+            <Link href="https://github.com/subhajitsarkar-dev" target="_blank">
               <Button color="default" size="icon">
                 <FaGithub size={28} className="text-white dark:text-black" />
               </Button>
-            </a>
-            <a href="https://x.com/sarkar50664" target="_blank">
+            </Link>
+            <Link href="https://x.com/sarkar50664" target="_blank">
               <Button color="default" size="icon">
                 <BsTwitter size={28} className="text-white dark:text-black" />
               </Button>
-            </a>
-            <a href="mailto:subhajitsarkar.dev@gmail.com" target="_blank">
+            </Link>
+            <Link href="mailto:subhajitsarkar.dev@gmail.com" target="_blank">
               <Button color="default" size="icon">
                 <SiGmail size={28} className="text-white dark:text-black" />
               </Button>
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://linkedin.com/in/subhajitsarkar-dev"
               target="_blank"
             >
@@ -58,7 +59,7 @@ const page = () => {
                   className="text-white dark:text-black"
                 />
               </Button>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
