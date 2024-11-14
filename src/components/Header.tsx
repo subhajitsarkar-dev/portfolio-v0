@@ -26,28 +26,28 @@ const Header = () => {
               <div className="text-2xl font-semibold">Subhajit</div>
             </Link>
           </div>
-          <div className="hidden items-center gap-3 sm:flex">
-            <Link
-              href="/"
-              className={router === "/" ? `font-bold` : `font-normal`}
-            >
-              About
-            </Link>
-            <Link
-              href="/skill"
-              className={router === "/skill" ? `font-bold` : `font-normal`}
-            >
-              Skill
-            </Link>
-            <Link
-              href="/project"
-              className={router === "/project" ? `font-bold` : `font-normal`}
-            >
-              Project
-            </Link>
-          </div>
 
           <div className="flex items-center gap-2">
+            <div className="hidden items-center gap-2 sm:flex">
+              <Link
+                href="/"
+                className={router === "/" ? `font-bold` : `font-normal`}
+              >
+                About
+              </Link>
+              <Link
+                href="/skill"
+                className={router === "/skill" ? `font-bold` : `font-normal`}
+              >
+                Skill
+              </Link>
+              <Link
+                href="/project"
+                className={router === "/project" ? `font-bold` : `font-normal`}
+              >
+                Project
+              </Link>
+            </div>
             <ThemeToggle />
             <MobileNav />
           </div>
