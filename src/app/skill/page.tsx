@@ -17,7 +17,7 @@ const page = () => {
           {skills.map((skill, index) => (
             <Card
               key={index}
-              className="rounded-lg p-6 shadow-lg transition-shadow duration-300 dark:shadow-lg dark:shadow-white/5 sm:hover:shadow-none sm:dark:hover:shadow-none"
+              className="rounded-lg p-6 shadow-lg transition-shadow duration-300 dark:shadow-lg dark:shadow-white/5"
             >
               <div className="flex items-center gap-4">
                 <skill.icon className="text-4xl text-black dark:text-white" />
