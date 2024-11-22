@@ -1,10 +1,10 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 import { BsTwitter } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
 import { SiGmail } from "react-icons/si";
 import homeBackground from "../../public/background.png";
-import Link from "next/link";
 
 const page = () => {
   return (
@@ -25,7 +25,7 @@ const page = () => {
           <div className="mt-4 flex justify-center">
             <p className="text-justify text-base sm:w-3/4 sm:text-center">
               I started my web development journey from Central Institute of
-              Technology in 2021 and it was complete in 2024. As well as I
+              Technology in 2021 and it was complete in 2020. As well as I
               complete my B.A from West Bengal State University. In this period
               I learned about many languages and frameworks like HTML&#44;
               CSS&#44; JavaScript&#44; React&#44; Nextjs and so one. In my free
