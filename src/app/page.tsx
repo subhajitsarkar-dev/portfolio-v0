@@ -1,10 +1,24 @@
 import { Button } from "@/components/ui/button";
+import { aboutPageSeo } from "@/lib/pageSeoData";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { BsTwitter } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
 import { SiGmail } from "react-icons/si";
 import homeBackground from "../../public/background.png";
+
+export const generateMetadata = (): Metadata => {
+  // const { title, description, keywords } = aboutPageSeo;
+
+  // return {
+  //   title: title,
+  //   description: description,
+  //   keywords: keywords,
+  // };
+
+  return aboutPageSeo;
+};
 
 const page = () => {
   return (
@@ -16,7 +30,7 @@ const page = () => {
             src={homeBackground}
             width={406}
             height={368}
-            className="absolute right-1/2 top-0 -z-50 h-auto w-[400px] -translate-y-1/3 translate-x-1/2 opacity-10 sm:w-[500px]"
+            className="absolute right-1/2 top-0 -z-50 h-auto w-[400px] -translate-y-28 translate-x-1/2 opacity-10 sm:w-[500px]"
             priority
           />
           <h1 className="text-center text-3xl font-medium sm:text-5xl">

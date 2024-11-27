@@ -1,14 +1,11 @@
-"use client";
-
-import { Button } from "@/components/ui/button";
-import { Card, CardTitle } from "@/components/ui/card";
+import ProjectCard from "@/components/ProjectCard";
+import { projectPageSeo } from "@/lib/pageSeoData";
 import { project } from "@/lib/projectData";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import Image from "next/image";
-import { FaGithub } from "react-icons/fa6";
-import { Pagination } from "swiper/modules";
+import { Metadata } from "next";
+
+export const generateMetadata = (): Metadata => {
+  return projectPageSeo;
+};
 
 const page = () => {
   return (
@@ -23,38 +20,9 @@ const page = () => {
             view details
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2">
           {project.map((item, index) => (
-            <Card
-              key={index}
-              className="rounded-lg shadow-lg transition-shadow duration-300 dark:shadow-lg dark:shadow-white/5"
-            >
-              <Swiper
-                spaceBetween={24}
-                pagination={{
-                  clickable: true,
-                }}
-                modules={[Pagination]}
-              >
-                {item.images.map((img, imgIndex) => (
-                  <SwiperSlide key={imgIndex}>
-                    <Image
-                      src={img}
-                      alt="project images"
-                      width={500}
-                      height={300}
-                      className="h-60 w-full rounded-t-lg object-cover"
-                    />
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-              <CardTitle className="m-2 flex items-center justify-between">
-                <div className="">{item.title}</div>
-                <Button color="default" size="icon">
-                  <FaGithub size={28} className="text-white dark:text-black" />
-                </Button>
-              </CardTitle>
-            </Card>
+            <ProjectCard info={item} key={index} />
           ))}
         </div>
       </section>

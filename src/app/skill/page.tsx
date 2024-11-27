@@ -1,5 +1,11 @@
 import { Card } from "@/components/ui/card";
 import { skills } from "@/lib/mySkill";
+import { skillPageSeo } from "@/lib/pageSeoData";
+import { Metadata } from "next";
+
+export const generateMetadata = (): Metadata => {
+  return skillPageSeo;
+};
 
 const page = () => {
   return (
@@ -9,7 +15,7 @@ const page = () => {
           <h1 className="mb-4 text-4xl font-bold text-black dark:text-white">
             My Skills
           </h1>
-          <p className="text-lg text-black dark:text-white">
+          <p className="text-lg text-gray-600 dark:text-gray-300">
             Technologies and tools I have learn
           </p>
         </div>
