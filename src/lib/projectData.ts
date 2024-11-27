@@ -8,7 +8,7 @@ export const project = [
   {
     title: "E-commerce Website",
     description:
-      "A full-stack e-commerce website built with Next.js and Tailwind CSS.",
+      "A full-stack e-commerce website built with Next.js and Tailwind CSS. It is a production grade application.",
     images: ["/bg4.jpg", "/p.jpg"],
   },
   {
