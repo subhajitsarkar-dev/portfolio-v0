@@ -8,11 +8,12 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const Header = () => {
-  const router = usePathname();
+  const path = usePathname();
+
   return (
     <>
       <header className="fixed top-0 z-50 w-full border-b border-foreground/20 backdrop-blur">
-        <div className="container mx-auto flex max-w-screen-lg items-center justify-between px-6 py-4">
+        <div className="container mx-auto flex max-w-screen-lg items-center justify-between px-6 py-2">
           <div className="">
             <Link href="/" className="flex items-center gap-2">
               <Image
@@ -27,30 +28,36 @@ const Header = () => {
             </Link>
           </div>
 
-          <div className="flex items-center gap-2">
+          <nav>
+            <Link href="" className=""></Link>
+            <Link href="" className=""></Link>
+            <Link href="" className=""></Link>
+          </nav>
+
+          {/* <div className="flex items-center gap-2">
             <div className="hidden items-center gap-2 sm:flex">
               <Link
                 href="/"
-                className={router === "/" ? `font-bold` : `font-normal`}
+                className={path === "/" ? `font-bold` : `font-normal`}
               >
                 About
               </Link>
               <Link
                 href="/skill"
-                className={router === "/skill" ? `font-bold` : `font-normal`}
+                className={path === "/skill" ? `font-bold` : `font-normal`}
               >
                 Skill
               </Link>
               <Link
                 href="/project"
-                className={router === "/project" ? `font-bold` : `font-normal`}
+                className={path === "/project" ? `font-bold` : `font-normal`}
               >
                 Project
               </Link>
             </div>
             <ThemeToggle />
             <MobileNav />
-          </div>
+          </div> */}
         </div>
       </header>
     </>

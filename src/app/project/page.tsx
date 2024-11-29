@@ -1,6 +1,7 @@
 import ProjectCard from "@/components/ProjectCard";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { projectPageSeo } from "@/lib/pageSeoData";
-import { project } from "@/lib/projectData";
+import { frontendProject, fullStackProject } from "@/lib/projectData";
 import { Metadata } from "next";
 
 export const generateMetadata = (): Metadata => {
@@ -20,11 +21,29 @@ const page = () => {
             view details
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2">
-          {project.map((item, index) => (
-            <ProjectCard info={item} key={index} />
-          ))}
-        </div>
+
+        <Tabs defaultValue="full-stack" className="mt-4">
+          <TabsList className="grid w-full grid-cols-2">
+            <TabsTrigger value="full-stack">Full stack</TabsTrigger>
+            <TabsTrigger value="frontend">Frontend</TabsTrigger>
+          </TabsList>
+
+          <TabsContent value="full-stack">
+            <div className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2">
+              {fullStackProject.map((item, index) => (
+                <ProjectCard info={item} key={index} />
+              ))}
+            </div>
+          </TabsContent>
+
+          <TabsContent value="frontend">
+            <div className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2">
+              {frontendProject.map((item, index) => (
+                <ProjectCard info={item} key={index} />
+              ))}
+            </div>
+          </TabsContent>
+        </Tabs>
       </section>
     </>
   );
