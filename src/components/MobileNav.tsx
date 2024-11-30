@@ -15,7 +15,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 const MobileNav = () => {
   const [openSheet, setOpenSheet] = useState(false);
-  const router = usePathname();
+  const path = usePathname();
 
   const closeSheetFn = () => setOpenSheet(false);
   return (
@@ -33,21 +33,33 @@ const MobileNav = () => {
               <Link
                 href="/"
                 onClick={closeSheetFn}
-                className={router === "/" ? `font-bold` : `font-normal`}
+                className={
+                  path === "/"
+                    ? `font-medium text-foreground`
+                    : `font-medium text-foreground/60`
+                }
               >
                 About
               </Link>
               <Link
                 href="/skill"
                 onClick={closeSheetFn}
-                className={router === "/skill" ? `font-bold` : `font-normal`}
+                className={
+                  path === "/skill"
+                    ? `font-medium text-foreground`
+                    : `font-medium text-foreground/60`
+                }
               >
                 Skill
               </Link>
               <Link
                 href="/project"
                 onClick={closeSheetFn}
-                className={router === "/project" ? `font-bold` : `font-normal`}
+                className={
+                  path === "/project"
+                    ? `font-medium text-foreground`
+                    : `font-medium text-foreground/60`
+                }
               >
                 Project
               </Link>

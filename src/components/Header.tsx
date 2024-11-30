@@ -28,36 +28,50 @@ const Header = () => {
             </Link>
           </div>
 
-          <nav>
-            <Link href="" className=""></Link>
-            <Link href="" className=""></Link>
-            <Link href="" className=""></Link>
+          <nav className="hidden grid-cols-4 place-items-center gap-2 sm:grid">
+            <Link
+              href="/"
+              className={
+                path === "/"
+                  ? `font-medium text-foreground`
+                  : `font-medium text-foreground/60`
+              }
+            >
+              About
+            </Link>
+            <Link
+              href="/skill"
+              className={
+                path === "/skill"
+                  ? `font-medium text-foreground`
+                  : `font-medium text-foreground/60`
+              }
+            >
+              Skill
+            </Link>
+            <Link
+              href="/project"
+              className={
+                path === "/project"
+                  ? `font-medium text-foreground`
+                  : `font-medium text-foreground/60`
+              }
+            >
+              Project
+            </Link>
+            <div className="">
+              <ThemeToggle />
+            </div>
           </nav>
 
-          {/* <div className="flex items-center gap-2">
-            <div className="hidden items-center gap-2 sm:flex">
-              <Link
-                href="/"
-                className={path === "/" ? `font-bold` : `font-normal`}
-              >
-                About
-              </Link>
-              <Link
-                href="/skill"
-                className={path === "/skill" ? `font-bold` : `font-normal`}
-              >
-                Skill
-              </Link>
-              <Link
-                href="/project"
-                className={path === "/project" ? `font-bold` : `font-normal`}
-              >
-                Project
-              </Link>
+          <nav className="grid grid-flow-col place-items-center gap-2 sm:hidden">
+            <div className="">
+              <ThemeToggle />
             </div>
-            <ThemeToggle />
-            <MobileNav />
-          </div> */}
+            <div className="">
+              <MobileNav />
+            </div>
+          </nav>
         </div>
       </header>
     </>
