@@ -22,9 +22,9 @@ const page = () => {
           </p>
         </div>
 
-        <Tabs defaultValue="full-stack" className="mt-4">
+        <Tabs defaultValue="full-stack" className="mt-6">
           <TabsList className="grid w-full grid-cols-2">
-            <TabsTrigger value="full-stack">Full stack</TabsTrigger>
+            <TabsTrigger value="full-stack">Full Stack</TabsTrigger>
             <TabsTrigger value="frontend">Frontend</TabsTrigger>
           </TabsList>
 
