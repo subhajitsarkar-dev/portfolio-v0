@@ -11,7 +11,7 @@ export const generateMetadata = (): Metadata => {
 const page = () => {
   return (
     <>
-      <section className="mb-28 mt-28 min-h-screen">
+      <section className="mb-14 mt-28 min-h-screen">
         <div className="text-center">
           <h1 className="mb-4 text-4xl font-bold text-gray-800 dark:text-white">
             My Projects

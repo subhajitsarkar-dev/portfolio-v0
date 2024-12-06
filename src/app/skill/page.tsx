@@ -10,7 +10,7 @@ export const generateMetadata = (): Metadata => {
 const page = () => {
   return (
     <>
-      <section className="py-28">
+      <section className="mb-14 mt-28">
         <div className="flex flex-col items-center">
           <h1 className="mb-4 text-4xl font-bold text-black dark:text-white">
             My Skills

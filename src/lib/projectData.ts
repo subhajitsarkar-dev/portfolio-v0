@@ -16,13 +16,13 @@ export const fullStackProject = [
   {
     title: "Todo Application",
     description:
-      "A full-stack e-commerce website built with Next.js and Tailwind CSS.",
+      "A full-stack Todo application where Users can sign in securely to manage their task. User can adding, deleting and mark the complete or incomplete tasks. This app made by - JavaScript, Nextjs, TypeScript, Tailwind css,Tanstack query, Directus and Shadecn/ui.",
     images: ["/p.jpg", "/p1.png", "/bg4.jpg"],
   },
   {
     title: "Blog Application",
     description:
-      "A full-stack e-commerce website built with Next.js and Tailwind CSS.",
+      "A full-stack Blog application where Users can sign in securely to manage their blogs including file upload. User can create,  update, delete their post and managing their profiles. This app made by - JavaScript, Nextjs, TypeScript, Tailwind css,Tanstack query, Directus and Shadecn/ui.",
     images: ["/p.jpg", "/p1.png", "/bg4.jpg"],
   },
 ];

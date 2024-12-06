@@ -33,7 +33,8 @@ export const skills = [
   {
     name: "React",
     icon: SiReact,
-    description: "Library for building user interfaces.",
+    description:
+      "Library for building dynamic and interactive user interfaces.",
   },
   {
     name: "Nextjs",
@@ -43,7 +44,8 @@ export const skills = [
   {
     name: "Tailwind CSS",
     icon: SiTailwindcss,
-    description: "Utility-first CSS framework.",
+    description:
+      "Utility-first CSS framework that provides pre-defined classes.",
   },
   {
     name: "TypeScript",
@@ -53,7 +55,7 @@ export const skills = [
   {
     name: "Expo",
     icon: SiExpo,
-    description: "Framework for building React Native apps easily.",
+    description: "Building React Native apps easily.",
   },
   {
     name: "Node.js",
